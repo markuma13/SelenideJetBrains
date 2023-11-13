@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7b063e0-dec8-4c96-a8e9-0c0714e75cc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c7b063e0-dec8-4c96-a8e9-0c0714e75cc2" name="Changes" comment="updateTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AssertionHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureAttachmentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureAttachmentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/MyExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/MyExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DataGripPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DataGripPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DataGripPricingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DataGripPricingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/DataGripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/DataGripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,35 +33,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.DataGripTest.checkLicensingAndPurchasing.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.checkPageDataGripComboBox.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.checkPageWhatSnewComboBox.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.checkPricesPageDataGrip.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.checkSubscriptionOptions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataGripTest.tooltipVisabilityElementsClickPartyServices.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.DataGripTest.activeDiscoveryPage.executor": "Run",
+    "JUnit.DataGripTest.checkActivityButtonDownloadCap.executor": "Run",
+    "JUnit.DataGripTest.checkActivityButtonPricingCap.executor": "Run",
+    "JUnit.DataGripTest.checkInvalidEnterEmail.executor": "Run",
+    "JUnit.DataGripTest.checkLicensingAndPurchasing.executor": "Run",
+    "JUnit.DataGripTest.checkLinkTextVSN.executor": "Run",
+    "JUnit.DataGripTest.checkPageDataGripComboBox.executor": "Run",
+    "JUnit.DataGripTest.checkPageWhatSnewComboBox.executor": "Run",
+    "JUnit.DataGripTest.checkPricesPageDataGrip.executor": "Run",
+    "JUnit.DataGripTest.checkSubscriptionOptions.executor": "Run",
+    "JUnit.DataGripTest.executor": "Run",
+    "JUnit.DataGripTest.invalidCheckValidateEmail.executor": "Run",
+    "JUnit.DataGripTest.tooltipVisabilityElementsClickPartyServices.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.DataGripTest.checkPricesPageDataGrip">
-    <configuration name="DataGripTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.DataGripTest.checkLicensingAndPurchasing">
+    <configuration name="DataGripTest.activeDiscoveryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SelenideJetBrains" />
       <extension name="coverage">
         <pattern>
@@ -80,28 +77,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataGripTest.checkPageDataGripComboBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SelenideJetBrains" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="METHOD_NAME" value="checkPageDataGripComboBox" />
+      <option name="METHOD_NAME" value="activeDiscoveryPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataGripTest.checkPageWhatSnewComboBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataGripTest.checkLicensingAndPurchasing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SelenideJetBrains" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +93,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="METHOD_NAME" value="checkPageWhatSnewComboBox" />
+      <option name="METHOD_NAME" value="checkLicensingAndPurchasing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataGripTest.tooltipVisabilityElementsClickPartyServices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataGripTest.checkSubscriptionOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SelenideJetBrains" />
       <extension name="coverage">
         <pattern>
@@ -143,7 +125,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="METHOD_NAME" value="tooltipVisabilityElementsClickPartyServices" />
+      <option name="METHOD_NAME" value="checkSubscriptionOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataGripTest.invalidCheckValidateEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelenideJetBrains" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
+      <option name="METHOD_NAME" value="invalidCheckValidateEmail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataGripTest.checkLicensingAndPurchasing" />
+        <item itemvalue="JUnit.DataGripTest.checkSubscriptionOptions" />
         <item itemvalue="JUnit.DataGripTest.checkPricesPageDataGrip" />
-        <item itemvalue="JUnit.DataGripTest.checkPageWhatSnewComboBox" />
-        <item itemvalue="JUnit.DataGripTest.tooltipVisabilityElementsClickPartyServices" />
-        <item itemvalue="JUnit.DataGripTest" />
-        <item itemvalue="JUnit.DataGripTest.checkPageDataGripComboBox" />
+        <item itemvalue="JUnit.DataGripTest.invalidCheckValidateEmail" />
+        <item itemvalue="JUnit.DataGripTest.activeDiscoveryPage" />
       </list>
     </recent_temporary>
   </component>
@@ -195,8 +193,26 @@
       <workItem from="1699365512546" duration="7000" />
       <workItem from="1699386924126" duration="1086000" />
       <workItem from="1699464846625" duration="130000" />
-      <workItem from="1699530160732" duration="698000" />
+      <workItem from="1699530160732" duration="1220000" />
+      <workItem from="1699874302326" duration="2741000" />
     </task>
+    <task id="LOCAL-00001" summary="updateTest">
+      <option name="closed" value="true" />
+      <created>1699531012480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699531012480</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updateTest">
+      <option name="closed" value="true" />
+      <created>1699531057347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699531057347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,5 +228,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updateTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="updateTest" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package test;
 
 import com.codeborne.selenide.Configuration;
+import com.example.selenidejetbrains.AssertionHelper;
 import com.example.selenidejetbrains.MyExtension;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -36,20 +37,26 @@ public class DataGripTest extends BaseTest {
     @DisplayName("Проверка открытия страницы /datagrip/features")
     public void activeDiscoveryPage() {
         dataGripPage.clickDiscoverButton();
-        assertEquals("https://www.jetbrains.com/datagrip/features/", url(), "Не верная ссылка");
+
+        String expectedUrl = "https://www.jetbrains.com/datagrip/features/";
+        AssertionHelper.assertEqualsWithMessage(expectedUrl, url(), "Не верная ссылка");
     }
     @Test
     @DisplayName("Проверка ввода пустого email")
     public void invalidCheckValidateEmail() {
         String emptyEmail = dataGripPage.enterInvalidEmailGetText("");
-        assertEquals(emptyEmail, "This field is required.", "Неккоректный текст сообщения валидации");
+        String actualTextValidate = "This field is required.";
+
+        AssertionHelper.assertEqualsWithMessage(emptyEmail,actualTextValidate,"Неккоректный текст сообщения валидации");
     }
     @ParameterizedTest(name = "#{index} - Проверка ввода на невалидность Email {0}")
     @CsvSource({"insidi", "%%%/%%%", "pers@lmotion"})
     @DisplayName("Проверка ввода невалидного Email")
     public void checkInvalidEnterEmail(String email) {
         String entering = dataGripPage.enterInvalidEmailGetText(email);
-        assertEquals(entering, "Please enter a valid email address.", "Неккоректный текст сообщения валидации");
+        String actualTextValidate = "Please enter a valid email address.";
+
+        AssertionHelper.assertEqualsWithMessage(entering, actualTextValidate, "Неккоректный текст сообщения валидации" );
     }
     @Test
     @DisplayName("Проверка открытия страницы third-parties через tooltip")
@@ -57,7 +64,8 @@ public class DataGripTest extends BaseTest {
         dataGripPage.clickLinkPartyServices();
         dataGripPage.switchToTab(2);
 
-        assertEquals("https://www.jetbrains.com/legal/docs/privacy/third-parties/", url(), "Открыта неверная ссылка");
+        String expectedUrl = "https://www.jetbrains.com/legal/docs/privacy/third-parties/";
+        AssertionHelper.assertEqualsWithMessage(expectedUrl, url(), "Открыта неверная ссылка");
     }
     @Test
     @DisplayName("Проверка открытие страницы релиза и ожидаемого на нем текста")
@@ -67,24 +75,30 @@ public class DataGripTest extends BaseTest {
         String expectedText = "For DataGrip 2023.1, we focused entirely on quality. We’ve fixed many " +
                 "bugs that had accumulated in our public issue tracker " +
                 "(not the most fun part of the job, but important nonetheless).";
-        assertEquals(expectedText, dataGripPage.checkGetTextViewSampleOpen(), "Ожидаемый текст не найден на странице");
+
+        AssertionHelper.assertEqualsWithMessage(expectedText, dataGripPage.checkGetTextViewSampleOpen(),
+                "Ожидаемый текст не найден на странице");
     }
     @Test
     @DisplayName("Проверка активаности кнопки Download в шапке")
     public void checkActivityButtonDownloadCap() {
-        assertTrue(dataGripPage.checkIfDownloadButtonIsClickableCap(), "Кнопка скачивания не активна");
+        AssertionHelper.assertTrueWithMessage(dataGripPage.checkIfDownloadButtonIsClickableCap(),
+                "Кнопка скачивания не активна");
     }
     @Test
     @DisplayName("Проверка активаности кнопки Pricing в шапке")
     public void checkActivityButtonPricingCap() {
-        assertTrue(dataGripPage.checkIfPricingButtonIsClickableCap(), "Кнопка скачивания не активна");
+        AssertionHelper.assertTrueWithMessage(dataGripPage.checkIfPricingButtonIsClickableCap(),
+                "Кнопка скачивания не активна");
         dataGripPage.clickPricingButton();
     }
     @Test
     @DisplayName("Проверка комбобоксов и активности кнопки exe.Windows")
     public void checkPageDataGripComboBox() {
-        assertFalse(dataGripPage.getComboBoxes().isEmpty(), "Список комбобоксов пустой");
-        assertTrue(dataGripPage.checkButtonExeWindowsComboBox(), "Кнопка не активна");
+        AssertionHelper.assertNotEmptyWithMessage(dataGripPage.getComboBoxes(),
+                "Список комбобоксов пустой");
+        AssertionHelper.assertTrueWithMessage(dataGripPage.checkIfDownloadButtonIsClickableCap(),
+                "Кнопка скачивания не активна");
     }
     @Test
     @DisplayName("Проверка открытие страницы через баннер и активность ComboBox")
@@ -95,32 +109,38 @@ public class DataGripTest extends BaseTest {
                 .clickImgDataGripRelease()
                 .switchToTab(3);
 
-        assertEquals("https://www.jetbrains.com/datagrip/whatsnew/?utm_source=marketo&utm_medium=email&" +
+        AssertionHelper.assertEqualsWithMessage(
+                "https://www.jetbrains.com/datagrip/whatsnew/?utm_source=marketo&utm_medium=email&" +
                         "utm_campaign=datagrip_2023_1_newsletter&utm_content=newsletter&p=banner",
                 url(), "Открыта неверная ссылка");
 
-        assertFalse(dataGripPage.getComboBoxes().isEmpty(), "Список комбобоксов пустой");
-        assertTrue(dataGripPage.checkButtonExeWindowsComboBox(), "Кнопка не активна");
+        AssertionHelper.assertNotEmptyWithMessage(dataGripPage.getComboBoxes(), "Список комбобоксов пустой");
+        AssertionHelper.assertTrueWithMessage(dataGripPage.checkButtonExeWindowsComboBox(), "Кнопка не активна");
     }
     @Test
     @DisplayName("Проверка сумм продуктов на страницы цен")
     public void checkPricesPageDataGrip() {
         dataGripPage.clickPricingButton();
-        assertEquals("https://www.jetbrains.com/datagrip/buy/#commercial", url(), "Не удалось перейти на ожидаемую страницу!");
+        AssertionHelper.assertEqualsWithMessage("https://www.jetbrains.com/datagrip/buy/#commercial", url(),
+                "Не удалось перейти на ожидаемую страницу!");
 
         String priceAllPackYears = "US $779.00";
-        assertEquals(priceAllPackYears, dataGripPricingPage.checkPriceAllProductsPack(), "Не верная сумма AllPackYears");
+        AssertionHelper.assertEqualsWithMessage(priceAllPackYears, dataGripPricingPage.checkPriceAllProductsPack(),
+                "Не верная сумма AllPackYears");
 
         String priceDataGripBase = "US $229.00";
-        assertEquals(priceDataGripBase, dataGripPricingPage.checkPriceDataGripBasesBiling(), "Не верная YearsBases сумма");
+        AssertionHelper.assertEqualsWithMessage(priceDataGripBase, dataGripPricingPage.checkPriceDataGripBasesBiling(),
+                "Не верная YearsBases сумма");
 
         dataGripPricingPage.clickSwitchTariff();
 
         String priceMonthlyDataGripBase = "US $22.90";
-        assertEquals(priceMonthlyDataGripBase, dataGripPricingPage.checkPriceMonthlyBillingDataGrip(), "Не верная сумма MonthlyBase");
+        AssertionHelper.assertEqualsWithMessage(priceMonthlyDataGripBase, dataGripPricingPage.checkPriceMonthlyBillingDataGrip(),
+                "Не верная сумма MonthlyBase");
 
         String priceMonthlyAllProductsPack = "US $77.90";
-        assertEquals(priceMonthlyAllProductsPack, dataGripPricingPage.checkPriceMonthlyBillingAllProductsPack(), "Не верная сумма MonthlyAllPack");
+        AssertionHelper.assertEqualsWithMessage(priceMonthlyAllProductsPack, dataGripPricingPage.checkPriceMonthlyBillingAllProductsPack(),
+                "Не верная сумма MonthlyAllPack");
     }
     @Test
     @DisplayName("Проверка заголовка открытой страницы Subscription Options через FAQ в разделе Pricing")
@@ -131,7 +151,7 @@ public class DataGripTest extends BaseTest {
         dataGripPage.switchToTab(2);
 
         String expectedTitle = "Compare Subscription Options - JetBrains Toolbox";
-        assertEquals(expectedTitle, dataGripPricingPage.checkTitlePage(),
+        AssertionHelper.assertEqualsWithMessage(expectedTitle, dataGripPricingPage.checkTitlePage(),
                 "Заголовок страницы не совпадает с ожидаемым");
     }
     @Test
@@ -144,7 +164,7 @@ public class DataGripTest extends BaseTest {
         dataGripPage.waitSleep();
 
         String expectedTitle = "Licensing and Purchasing FAQ";
-        assertEquals(expectedTitle, dataGripPricingPage.checkTitlePage(),
+        AssertionHelper.assertEqualsWithMessage(expectedTitle, dataGripPricingPage.checkTitlePage(),
                 "Заголовок страницы не совпадает с ожидаемым");
     }
 }
