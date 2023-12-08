@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b063e0-dec8-4c96-a8e9-0c0714e75cc2" name="Changes" comment="updateTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AssertionHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/readmes/DataGripTest.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AllureLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AssertionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/selenidejetbrains/AssertionHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DataGripPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DataGripPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DataGripPricingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DataGripPricingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/DataGripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/DataGripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +28,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/test/DataGripTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -42,12 +56,14 @@
     "JUnit.DataGripTest.checkLicensingAndPurchasing.executor": "Run",
     "JUnit.DataGripTest.checkLinkTextVSN.executor": "Run",
     "JUnit.DataGripTest.checkPageDataGripComboBox.executor": "Run",
+    "JUnit.DataGripTest.checkPageWhatNewComboBox.executor": "Run",
     "JUnit.DataGripTest.checkPageWhatSnewComboBox.executor": "Run",
     "JUnit.DataGripTest.checkPricesPageDataGrip.executor": "Run",
     "JUnit.DataGripTest.checkSubscriptionOptions.executor": "Run",
     "JUnit.DataGripTest.executor": "Run",
     "JUnit.DataGripTest.invalidCheckValidateEmail.executor": "Run",
     "JUnit.DataGripTest.tooltipVisabilityElementsClickPartyServices.executor": "Run",
+    "JUnit.DataGripTest.tooltipVisibilityElementsClickPartyServices.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -67,22 +83,6 @@
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.DataGripTest.checkLicensingAndPurchasing">
-    <configuration name="DataGripTest.activeDiscoveryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SelenideJetBrains" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="METHOD_NAME" value="activeDiscoveryPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DataGripTest.checkLicensingAndPurchasing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SelenideJetBrains" />
       <extension name="coverage">
@@ -94,6 +94,38 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
       <option name="METHOD_NAME" value="checkLicensingAndPurchasing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataGripTest.checkPageDataGripComboBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelenideJetBrains" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
+      <option name="METHOD_NAME" value="checkPageDataGripComboBox" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataGripTest.checkPageWhatNewComboBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SelenideJetBrains" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
+      <option name="METHOD_NAME" value="checkPageWhatNewComboBox" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,29 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataGripTest.invalidCheckValidateEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SelenideJetBrains" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DataGripTest" />
-      <option name="METHOD_NAME" value="invalidCheckValidateEmail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DataGripTest.checkLicensingAndPurchasing" />
         <item itemvalue="JUnit.DataGripTest.checkSubscriptionOptions" />
         <item itemvalue="JUnit.DataGripTest.checkPricesPageDataGrip" />
-        <item itemvalue="JUnit.DataGripTest.invalidCheckValidateEmail" />
-        <item itemvalue="JUnit.DataGripTest.activeDiscoveryPage" />
+        <item itemvalue="JUnit.DataGripTest.checkPageWhatNewComboBox" />
+        <item itemvalue="JUnit.DataGripTest.checkPageDataGripComboBox" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +211,12 @@
       <workItem from="1699464846625" duration="130000" />
       <workItem from="1699530160732" duration="1220000" />
       <workItem from="1699874302326" duration="2741000" />
+      <workItem from="1700144477545" duration="53000" />
+      <workItem from="1700214914233" duration="7000" />
+      <workItem from="1700565978008" duration="77000" />
+      <workItem from="1701196457974" duration="37000" />
+      <workItem from="1701862343559" duration="3169000" />
+      <workItem from="1702024804854" duration="7410000" />
     </task>
     <task id="LOCAL-00001" summary="updateTest">
       <option name="closed" value="true" />

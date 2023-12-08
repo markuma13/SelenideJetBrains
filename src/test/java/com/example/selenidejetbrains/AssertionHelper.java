@@ -13,9 +13,11 @@ public class AssertionHelper {
             throw e;
         }
     }
+
     public static void assertTrueWithMessage(boolean condition, String message) {
         assertTrue(condition, message);
     }
+
     public static void assertNotEmptyWithMessage(Collection<?> collection, String message) {
         assertFalse(collection.isEmpty(), message);
     }

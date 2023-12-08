@@ -23,9 +23,13 @@ public class BaseTest {
         getWebDriver().manage().window().maximize();
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
+
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         Selenide.closeWebDriver();
     }
 
+    public void waitSleep(int sleep) {
+        Selenide.sleep(sleep);
+    }
 }
