@@ -1,6 +1,6 @@
 # SelenideJetBrains
-### Проект SelenideJetBrains использует Selenide для автоматизации тестирования функционала страницы /datagrip на веб-сайте JetBrains. Вот краткое описание того, как реализованы некоторые методы и какие фреймворки используются:
-## DataGripTest класс тестов
+### Проект SelenideJetBrains использует Selenide для автоматизации тестирования функционала страницы [/datagrip](https://www.jetbrains.com/datagrip/) на веб-сайте JetBrains. Вот краткое описание того, как реализованы некоторые методы и какие фреймворки используются:
+## [DataGripTest](https://github.com/markuma13/SelenideJetBrains/blob/master/src/test/java/test/DataGripTest.java) класс тестов
 Используется JUnit 5 для расширения функциональности тестов и для задания отображаемого имени класса тестов
 ## AllureAttachmentsManager
 screenshot(): Метод, использующий Selenide для создания скриншота и прикрепления его к отчету Allure.
